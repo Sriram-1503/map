@@ -31,6 +31,7 @@ struct ContentView: View {
             Text("AAtce Training Center")
                 .font(.subheadline)
                 .padding(.bottom,100)
+            Text("")
         }
     }
 }
