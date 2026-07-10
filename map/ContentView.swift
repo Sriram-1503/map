@@ -10,12 +10,29 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            MapView()
+                .frame(height: 350)
+            ImageView()
+                .offset(y:-140)
         }
-        .padding()
+        VStack{
+            Text("Apple Lab")
+                .font(.title)
+                .bold()
+            HStack{
+                Text("Parul University")
+                Text("Vadodara")
+                    .padding(.leading,110)
+            }
+            .font(.subheadline)
+            Divider()
+            Text("About Apple Lab")
+                .bold()
+            Text("AAtce Training Center")
+                .font(.subheadline)
+                .padding(.bottom,100)
+            Text("0")
+        }
     }
 }
 
